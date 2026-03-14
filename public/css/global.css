@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    /* FAZ COM QUE NÃO SEJA POSSÍVEL FAZER UM ELEMENTO MAIOR QUE 100% DO BODY */
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #FAF9F6;
+    /*#F5F5F5;*/
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}

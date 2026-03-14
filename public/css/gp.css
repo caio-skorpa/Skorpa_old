@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+:root {
+    --whiteColor: #FAF9F6;
+    --blueColor: rgb(0, 102, 204);
+    --blackColor: #1d1d1d;
+    --greyColor: grey;
+    --mainFont: "Inter", sans-serif;
+}
+
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.nav {
+    grid-area: nav;
+    /*background-color: rgb(92, 92, 92);*/
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    margin: 15px 5px 5px 15px;
+    padding: 10px;
+}
+
+.content {
+    grid-area: content;
+    /*background-color: rgb(92, 92, 92);*/
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    margin: 15px 15px 5px 5px;
+}
+
+
+main {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: clamp(80px, 30vw, 250px) 1fr;
+    grid-template-rows: 1fr 65px;
+    /*250px*/
+    grid-template-areas:
+        "nav content"
+        "footer footer";
+    background-color: #EDEDED;
+}
+
+main.full {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 65px;
+    grid-template-areas: "content"
+        "footer";
+}
+
+main.full .content {
+    margin: 15px 15px 5px 15px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    font-family: "Mea Culpa", cursive;
+    color: #FAF9F6;
+    padding: 10px 5px 10px 5px;
+    font-size: clamp(18px, 7vw, 40px);
+    font-weight: bold;
+    border: 1px solid #EDEDED;
+}
+
+.nav-user {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    align-items: center;
+    background-color: #1d1d1d;
+    color: #FAF9F6;
+    border: 1px solid #EDEDED;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+    margin: 20px 0px 20px 0px;
+    padding: 10px 5px 10px 5px;
+    font-size: clamp(18px, 3vw, 20px);
+    /*minimo, padrao e máximo*/
+}
+
+.img {
+    border-radius: 50%;
+    background-color: rgb(92, 92, 92);
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+}
+
+.img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fa-bars {
+    margin: 15px;
+    color: #EDEDED;
+}
+
+.fa-bars:hover {
+    color: rgb(0, 102, 204);
+}
+
+.nav-user:hover {
+    color: rgb(0, 102, 204);
+}
+
+.nav-options {
+    font-size: clamp(18px, 3vw, 20px);
+    font-family: "Inter", sans-serif;
+    color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-options ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.sublist {
+    display: none;
+}
+
+.sublist.isBlock {
+    display: block;
+}
+
+.collect {
+    color: grey;
+    font-size: 13px;
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.collect:hover {
+    color: rgb(0, 102, 204);
+}
+
+.fa-angle-right {
+    font-size: 12px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 190px;
+}
+
+.list:hover {
+    background-color: var(--blueColor);
+}
+
+li a:hover {
+    color: rgb(0, 102, 204);
+}
+
+a {
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+li>a {
+    margin: 0px 0px 10px 20px;
+    font-size: 15px
+}
+
+.footer {
+    grid-area: footer;
+    border-radius: 20px;
+    background-color: var(--blackColor);
+    margin: 5px 15px 15px 15px;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.slider-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    white-space: nowrap;
+    color: #EDEDED;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.point {
+    border-left: 2px solid var(--greyColor);
+    padding: 5px;
+
+}
+
+.n {
+    border: none;
+}
+
+.currentUrl {
+    color: var(--blueColor);
+    border-left: 2px solid var(--blueColor);
+}

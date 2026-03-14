@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+#head {
+    background-color: #1d1d1d;
+    /*height: 6.88em;*/
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 90%;
+    margin: 2.5em auto 0 auto;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Mea Culpa", cursive;
+    /* font-family: "Orbitron", sans-serif; */
+    color: white;
+    /*font-size: 4.376em;*/
+    font-size: 70px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.kanji {
+    color: red;
+    /* outra opção de logo */
+}
+
+.options-head {
+    /*margin-right: 4.38em;*/
+    margin-right: 70px;
+}
+
+.options-head-button {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    /* margin: 0.339em;*/
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: #1d1d1d;
+    height: 50px;
+    width: 130px;
+    /*width: 8.7em;*/
+}
+
+.options-head-button:hover {
+    color: rgb(0, 102, 204);
+}
+
+.slider {
+    width: 90%;
+    display: flex;
+    font-family: "Inter", sans-serif;
+    height: 100px;
+    /* defina altura fixa */
+    margin-top: 40px;
+    overflow: hidden;
+    /* importante para animação */
+}
+
+
+.sigla {
+    font-weight: bold;
+}
+
+.slider-item {
+    font-size: 0.84em;
+    /* border: 1px solid grey;  */
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    left: 100%;
+    animation: slider 20s linear infinite;
+    /* animation-delay: var(--delay); */
+}
+
+@keyframes slider {
+    from {
+        left: 100%
+    }
+
+    to {
+        left: 70px
+    }
+}
+
+/*
+@keyframes slider {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+    */
+.text-home {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+    margin-left: 120px;
+}
+
+.text-home-logo {
+    /*font-family: "Mea Culpa", cursive;*/
+    font-size: 30px;
+    color: rgb(0, 102, 204);
+}
+
+#emailFooter {
+    text-decoration: none;
+    color: #1d1d1d;
+}

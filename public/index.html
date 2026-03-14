@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skorpa</title>
+    <link rel="stylesheet" href="/css/gp.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="nav">
+            <div class="nav-logo"><a href="/" class="point n">Skorpa</a></div>
+            <div class="nav-user">
+                <div class="img">
+                    <img src="/image/profile-logo.jpeg" alt="profile-logo">
+                </div>
+                <span class="firt-name">Caio</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nav-options">
+                <ul>
+                    <li>
+                        <div class="list" id="wallet">
+                            <span>Carteira</span>
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </div>
+                        <ul class="sublist" id="wallet-child">
+                            <li><a href="/carteira/aportes" class="point">Aportes</a></li>
+                            <li><a href="/carteira/meus-ativos" class="point">Meus ativos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="list" id="assets">
+                            <span>Ações</span>
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </div>
+                        <ul class="sublist" id="assets-child">
+                            <li><a href="/acoes/todos" class="point">Ações</a></li>
+                            <li><a href="/acoes/favoritas" class="point">Favoritas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="list" id="reports">
+                            <span>Relatorios</span>
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </div>
+                        <ul class="sublist" id="reports-child">
+                            <li><a href="/relatorios/carteira" class="point">Carteira</a></li>
+                            <li><a href="/relatorios/vendas" class="point">Vendas</a></li>
+                            <li><a href="/relatorios/aportes" class="point">Aportes</a></li>
+                            <li><a href="/relatorios/variacao" class="point">Variacao</a></li>
+                            <li><a href="/relatorios/dividendos" class="point">Dividendos</a></li>
+                            <!--QUANDO IRÁ RECEBER E QUANDO JÁ RECEBEU-->
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="list" id="settings">
+                            <span>Configurações</span>
+                            <i class="fa fa-angle-right pull-right"></i>
+                        </div>
+                        <ul class="sublist" id="settings-child">
+                            <li><a href="/config/usuario" class="point">Usuário</a></li>
+                            <li><a href="/config/atalhos" class="point">Atalhos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="collect">Recolher tudo</button>
+            </div>
+        </div>
+        <div class="content">
+            <i class="fa-solid fa-bars" title="CTRL+B"></i>
+            <div class="inside-content">
+                <div>
+                    <button class="new-folder openModal" data-modal="modal-3">
+                        <i class="fa-solid fa-folder"></i>
+                        Nova pasta
+                    </button>
+                    <dialog id="modal-3">
+                        <div class="modal-head">
+                            <button class="close-modal closeModal" data-modal="modal-3" type="button">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <form action="">
+                                <div class="input-group">
+                                    <label for="folder-name">Nome da pasta</label>
+                                    <input type="text" id="folder-name" name="folder-name"
+                                        placeholder="Adicione o nome da pasta" />
+                                </div>
+                            </form>
+                        </div>
+                    </dialog>
+                    <button class="add-favorite"><i class="fa-solid fa-bookmark"></i>Adicioanar favorito</button>
+                </div>
+                <div class="extern-favorite">
+                    <div class="favorite">
+                        <i class="fa-solid fa-folder folder openModal" data-modal="modal-1"></i>
+                        <span class="text-folder">Dy alto</span>
+                        <dialog id="modal-1">
+                            <div class="modal-head">
+                                <button class="close-modal closeModal" data-modal="modal-1" type="button">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <h1 class="folder-name">Dy alto</h1>
+                            </div>
+                            <div>
+                                <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
+                                <span class="text-folder">WEGE3</span>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="favorite">
+                        <i class="fa-solid fa-folder folder openModal" data-modal="modal-2"></i>
+                        <span class="text-folder">Pvp média</span>
+                        <dialog id="modal-2">
+                            <div class="modal-head">
+                                <button class="close-modal closeModal" data-modal="modal-2" type="button">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <h1 class="folder-name">Pvp média</h1>
+                            </div>
+                            <div>
+                                <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
+                                <span class="text-folder">WEGE3</span>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="favorite">
+                        <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
+                        <span class="text-folder">WEGE3</span>
+                    </div>
+                    <div class="favorite">
+                        <img src="/image/company logos/BBSA3.png" alt="bbsa3" class="cp-logo">
+                        <span class="text-folder">BBSA3</span>
+                    </div>
+                    <div class="favorite">
+                        <img src="/image/company logos/PETR4.png" alt="petr4" class="cp-logo">
+                        <span class="text-folder">PETR4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <span class="sigla">BBSE3</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">-1,32%</span>
+                        <span>R$ 40,21</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">WEGE3</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">-1,32%</span>
+                        <span>R$ 4,21</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">BBAS3</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">-1,32%</span>
+                        <span>R$ 90,21</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">CEMIG4</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">+1,32%</span>
+                        <span>R$ 100,21</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">PETR4</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">+1,35%</span>
+                        <span>R$ 34,21</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">ITSA4</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">+1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">POMO4</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">ABC12</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">CBHF4</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">ABC1</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">ABC2</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">ABC3</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                    <div class="slider-item">
+                        <span class="sigla">ABC4</span>
+                        <span class="variacaoItemIcon"></span>
+                        <span class="variacaoItem">1,32%</span>
+                        <span>R$ 20,10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="app"></div>
+</body>
+<script type="module" src="/js/gp.js"></script>
+<script type="module" src="/js/pages.js"></script>
+
+</html>

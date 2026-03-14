@@ -1,0 +1,29 @@
+{
+  "name": "the-skorpa",
+  "version": "1.0.0",
+  "description": "My dream",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "npx nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiogomesfontoura/The-Skorpa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/caiogomesfontoura/The-Skorpa/issues"
+  },
+  "homepage": "https://github.com/caiogomesfontoura/The-Skorpa#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

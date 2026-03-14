@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skorpa</title>
+    <link rel="stylesheet" href="./public/css/global.css">
+    <link rel="stylesheet" href="./public/css/wallet.css">
+</head>
+
+<body>
+    <form action="http://localhost:3030/contribution" method="post">
+        <input type="text" name="sigla" maxlength="8" />Sigla
+        <input type="date" name="data" />Data
+        <input type="text" name="quantidade" maxlength="15" />Quantidade
+        <input type="text" value="0,00" name="valorAtual" />Valor
+        <div id="valorAporte">Total: R$ 0,00</div>
+        <button type="submit">Adicionar aporte</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Símbolo</th>
+                <th>Variação</th>
+                <th>Quantidade</th>
+                <th>Preço médio</th>
+                <th>Cotação Atual</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="linha">
+                <td class="simbolo">WEGE3</td>
+                <td class="variacao"></td>
+                <td class="quantidade">24</td>
+                <td class="precoMedio">42,93</td>
+                <td class="precoAtual">46,22</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="linha">
+                <td class="simbolo">BBSE3</td>
+                <td class="variacao"></td>
+                <td class="quantidade">2224</td>
+                <td class="precoMedio">42,93</td>
+                <td class="precoAtual">49,22</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="linha">
+                <td class="simbolo">POMO4</td>
+                <td class="variacao"></td>
+                <td class="quantidade">22214</td>
+                <td class="precoMedio">4,93</td>
+                <td class="precoAtual">7,22</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="linha">
+                <td class="simbolo">ITSA4</td>
+                <td class="variacao"></td>
+                <td class="quantidade">24</td>
+                <td class="precoMedio">9,93</td>
+                <td class="precoAtual">3,22</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="linha">
+                <td class="simbolo">PERT4</td>
+                <td class="variacao"></td>
+                <td class="quantidade">24</td>
+                <td class="precoMedio">40,93</td>
+                <td class="precoAtual">41,22</td>
+                <td class="total"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./public/js/script.js"></script>
+    <script src="./public/js/variavao.js"></script>
+</body>
+
+</html>

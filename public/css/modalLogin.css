@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+
+dialog {
+    font-family: "Inter", sans-serif;
+    border: none;
+    width: 600px;
+    border-radius: 13px;
+    background-color: #1d1d1d;
+    color: white;
+    position: relative;
+    padding-top: 0;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.modal-tittle {
+    font-family: "Mea Culpa", cursive;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #9ca3af;
+    font-size: 18px;
+}
+
+.close-modal:hover {
+    color: #ffffff;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input-group label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.input-group input {
+    border-radius: 6px;
+    padding: 10px 16px;
+    background-color: #636262;
+}
+
+#email {
+    color: white;
+    border: 2px solid black;
+}
+#password {
+    color: white;
+    border: 2px solid black;
+}
+
+.input-group input:focus {
+    outline: 2px solid rgb(0, 102, 204);
+}
+
+#login-button {
+    align-self: center;
+    /*ISSO AQUI ACIMA FAZ COM QUE A DIV PAI N PEGUE NELE COM O flex-direction: column;*/
+    border: none;
+    border-radius: 6px;
+    padding: 10px 55px;
+    margin: 10px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-password {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    accent-color: rgb(0, 102, 204);
+}
+
+.register {
+    font-size: 13px;
+}
+
+.register>a,
+.forgot-password {
+    color: rgb(0, 102, 204);
+    text-decoration: none;
+}
+
+.register>a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+
+}

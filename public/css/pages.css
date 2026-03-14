@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+:root {
+    --whiteColor: #FAF9F6;
+    --blueColor: rgb(0, 102, 204);
+    --blackColor: #1d1d1d;
+    --greyColor: grey;
+    --mainFont: "Inter", sans-serif;
+}
+
+/*ADICIONAR FAVORITOS CSS*/
+.inside-content {
+    margin: 20px;
+}
+
+.new-folder {
+    border: none;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: var(--mainFont);
+    font-size: 15px;
+}
+
+.new-folder:hover {
+    color: var(--blueColor)
+}
+
+.add-favorite {
+    border: none;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: var(--mainFont);
+    font-size: 15px;
+}
+
+.add-favorite:hover {
+    color: var(--blueColor)
+}
+
+.folder {
+    color: var(--whiteColor);
+    /*color: grey;*/
+    font-size: 70px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.folder:hover {
+    background-color: var(--blueColor);
+}
+
+.text-folder {
+    font-size: 16px;
+    font-family: var(--mainFont);
+    color: var(--whiteColor);
+}
+
+.favorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.extern-favorite {
+    display: flex;
+}
+
+.cp-logo {
+    width: 67px;
+    height: 67px;
+    border-radius: 15px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.close-modal {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--blackColor);
+    font-size: 18px;
+}
+
+.folder-name {
+    font-family: var(--mainFont);
+    font-size: 20px;
+}
+
+.folder-modal {
+    font-size: 200px;
+}
+
+#add-name-folder {
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/*ADICIONAR FAVORITOS CSS*/

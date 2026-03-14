@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skorpa</title>
+    <link rel="stylesheet" href="./css/modalLogin.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div id="head">
+            <!-- <a href="/" id="logo">SKORPA <span class="kanji">栄</span></a> -->
+            <a href="/" id="logo">Skorpa</a>
+            <!-- <img src="./img/logoJapão.png" alt="logo" width="200px" id="logo"> -->
+            <div class="options-head">
+                <button class="options-head-button" data-modal="modal-1" id="openModal">Iniciar sessão</button>
+                <button class="options-head-button" onclick="window.location.href='/wallet'">Carteira</button>
+                <button class="options-head-button" onclick="window.location.href='/reports'">Relatórios</button>
+            </div>
+        </div>
+        <dialog id="modal-1">
+            <form action="http://localhost:3030/login" method="post">
+                <div class="dialog-logo">
+                    <h1 class="modal-tittle">Skorpa</h1>
+                    <button class="close-modal" data-modal="modal-1" type="button" id="closeModal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <label for="email">E-mail ou usuário</label>
+                        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" />
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" />
+                    </div>
+                    <div class="password-options">
+                        <div class="remember-password">
+                            <input type="checkbox" name="remember-password" id="remember-password" />
+                            <label for="remember-password">Lembrar</label>
+                        </div>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <button id="login-button">Login</button>
+                    <div class="register">
+                        <span>Não tem uma conta na Skorpa? </span>
+                        <a href="#">Criar uma conta</a>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+        <div class="slider">
+            <div class="slider-item">
+                <span class="sigla">BBSE3</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 40,21</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">WEGE3</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">-1,32%</span>
+                <span>R$ 4,21</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">BBAS3</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 90,21</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">CEMIG4</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 100,21</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">PETR4</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,35%</span>
+                <span>R$ 34,21</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">ITSA4</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 20,10</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">ITSA4</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 20,10</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">ITSA4</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 20,10</span>
+            </div>
+            <div class="slider-item">
+                <span class="sigla">ITSA4</span>
+                <span class="variacaoItemIcon"></span>
+                <span class="variacaoItem">1,32%</span>
+                <span>R$ 20,10</span>
+            </div>
+        </div>
+        <div class="text-home">
+            <h2>Transforme suas ações em estratégia patrimonial.
+                Com a <b class="text-home-logo">Skorpa</b>, você acompanha sua carteira, analisa desempenho e conduz a
+                evolução do seu patrimônio com
+                clareza e precisão.</h2>
+        </div>
+    </main>
+    <footer>
+        <p>Contato:</p>
+        <a href="mailto:ggomescaio@gmail.com" target="_blank" id="emailFooter">ggomescaio@gmail.com</a>
+    </footer>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+</body>
+
+</html>
