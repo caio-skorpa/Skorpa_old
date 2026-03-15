@@ -200,9 +200,9 @@ body {
 
 .options {
     position: absolute;
-    width: 100%;
-    background: white;
-    border-radius: 10px;
+    width: 300px;
+    background: var(--whiteColor);
+    border-radius: 15px;
     border: 1px solid #ccc;
     margin-top: 5px;
     list-style: none;
