@@ -27,7 +27,6 @@ body {
     margin: 10px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: var(--mainFont);
     font-size: 15px;
 }
 
@@ -42,7 +41,6 @@ body {
     padding: 15px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: var(--mainFont);
     font-size: 15px;
 }
 
@@ -64,7 +62,6 @@ body {
 
 .text-folder {
     font-size: 16px;
-    font-family: var(--mainFont);
     color: var(--whiteColor);
 }
 
@@ -87,10 +84,6 @@ body {
     cursor: pointer;
 }
 
-.modal-head {
-    font-family: var(--mainFont);
-}
-
 .close-modal {
     position: absolute;
     cursor: pointer;
@@ -109,7 +102,6 @@ body {
 }
 
 .folder-name {
-    font-family: var(--mainFont);
     font-size: 20px;
 }
 
@@ -149,7 +141,6 @@ body {
 }
 
 .custom-field .placeholder {
-    font-family: var(--mainFont);
     position: absolute;
     left: 12px;
     top: calc(50% + 10px);
@@ -187,7 +178,6 @@ body {
     color: var(--greyColor);
     font-size: 14px;
     padding-right: 40px;
-    font-family: var(--mainFont);
 }
 
 .modal-footer {
