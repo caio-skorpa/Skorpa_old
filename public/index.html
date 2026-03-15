@@ -7,6 +7,7 @@
     <title>Skorpa</title>
     <link rel="stylesheet" href="/css/gp.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
 </head>
@@ -85,15 +86,34 @@
                             <button class="close-modal closeModal" data-modal="modal-3" type="button">
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
+                            <h1>
+                                Criando nova pasta
+                            </h1>
+                            <h4>
+                                Adicione um nome à pasta e escolha os ativos de sua preferência
+                            </h4>
+                            <p class="example">
+                                Esta funcionalidade tem como objetio facilitar a organização dos ativos por grupos.
+                            <p class="example">Exemplo: <br>
+                                Sou um investidor que só compra ações com mais de 8% de <i>Dividend yield</i>, posso
+                                criar uma pasta para
+                                organizar esses ativos em um só lugar
+                            </p>
+
+                            </p>
                         </div>
-                        <div>
+                        <div class="modal-content">
                             <form action="">
-                                <div class="input-group">
-                                    <label for="folder-name">Nome da pasta</label>
-                                    <input type="text" id="folder-name" name="folder-name"
-                                        placeholder="Adicione o nome da pasta" />
-                                </div>
+                                <label class="custom-field">
+                                    <input type="text" required maxlength="20">
+                                    <span class="placeholder">Nome da pasta</span>
+                                </label>
                             </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="create-folder">
+                                Adicionar pasta
+                            </button>
                         </div>
                     </dialog>
                     <button class="add-favorite"><i class="fa-solid fa-bookmark"></i>Adicioanar favorito</button>
@@ -109,10 +129,11 @@
                                 </button>
                                 <h1 class="folder-name">Dy alto</h1>
                             </div>
-                            <div>
+                            <div class="modal-content">
                                 <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
                                 <span class="text-folder">WEGE3</span>
                             </div>
+                            <div class="modal-footer"></div>
                         </dialog>
                     </div>
                     <div class="favorite">
@@ -125,10 +146,11 @@
                                 </button>
                                 <h1 class="folder-name">Pvp média</h1>
                             </div>
-                            <div>
+                            <div class="modal-content">
                                 <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
                                 <span class="text-folder">WEGE3</span>
                             </div>
+                            <div class="modal-footer"></div>
                         </dialog>
                     </div>
                     <div class="favorite">
