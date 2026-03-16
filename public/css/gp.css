@@ -87,7 +87,7 @@ main.full .content {
     border: 1px solid #EDEDED;
     border-radius: 15px;
     font-family: "Inter", sans-serif;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 10px 0px;
     padding: 10px 5px 10px 5px;
     font-size: clamp(18px, 3vw, 20px);
     /*minimo, padrao e máximo*/
@@ -173,8 +173,10 @@ main.full .content {
     flex-direction: row;
     align-items: center;
     border-radius: 15px;
-    padding: 10px 10px;
+    padding: 5px 5px;
     width: 190px;
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 .list:hover {
@@ -182,16 +184,16 @@ main.full .content {
 }
 
 li a:hover {
-    color: rgb(0, 102, 204);
+    color: var(--blueColor);
 }
 
 a {
     text-decoration: none;
-    color: #EDEDED;
+    color: var(--whiteColor);
 }
 
 li>a {
-    margin: 0px 0px 10px 20px;
+    margin: 0px 0px 10px 10px;
     font-size: 15px
 }
 
@@ -247,4 +249,20 @@ li>a {
 .currentUrl {
     color: var(--blueColor);
     border-left: 2px solid var(--blueColor);
+}
+
+#wallet>.list-name {
+    margin-right: 80px;
+}
+
+#assets>.list-name {
+    margin-right: 90px;
+}
+
+#reports>.list-name {
+    margin-right: 65px;
+}
+
+#settings>.list-name {
+    margin-right: 30px;
 }

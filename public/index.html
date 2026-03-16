@@ -7,6 +7,7 @@
     <title>Skorpa</title>
     <link rel="stylesheet" href="/css/gp.css">
     <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
 </head>
@@ -26,7 +27,16 @@
                 <ul>
                     <li>
                         <div class="list" id="wallet">
-                            <span>Carteira</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#FAF9F6" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-wallet-cards-icon lucide-wallet-cards">
+                                <rect width="18" height="18" x="3" y="3" rx="2" />
+                                <path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+                                <path
+                                    d="M3 11h3c.8 0 1.6.3 2.1.9l1.1.9c1.6 1.6 4.1 1.6 5.7 0l1.1-.9c.5-.5 1.3-.9 2.1-.9H21" />
+                            </svg>
+                            <span class="list-name">Carteira</span>
+
                             <i class="fa fa-angle-right pull-right"></i>
                         </div>
                         <ul class="sublist" id="wallet-child">
@@ -36,7 +46,16 @@
                     </li>
                     <li>
                         <div class="list" id="assets">
-                            <span>Ações</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#FAF9F6" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chart-no-axes-column-increasing-icon lucide-chart-no-axes-column-increasing">
+                                <path d="M5 21v-6" />
+                                <path d="M12 21V9" />
+                                <path d="M19 21V3" />
+                            </svg>
+                            <span class="list-name">Ações</span>
+
                             <i class="fa fa-angle-right pull-right"></i>
                         </div>
                         <ul class="sublist" id="assets-child">
@@ -46,7 +65,18 @@
                     </li>
                     <li>
                         <div class="list" id="reports">
-                            <span>Relatorios</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#FAF9F6" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text">
+                                <path
+                                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                                <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                <path d="M10 9H8" />
+                                <path d="M16 13H8" />
+                                <path d="M16 17H8" />
+                            </svg>
+                            <span class="list-name">Relatorios</span>
+
                             <i class="fa fa-angle-right pull-right"></i>
                         </div>
                         <ul class="sublist" id="reports-child">
@@ -60,7 +90,15 @@
                     </li>
                     <li>
                         <div class="list" id="settings">
-                            <span>Configurações</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#FAF9F6" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings">
+                                <path
+                                    d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            <span class="list-name">Configurações</span>
+
                             <i class="fa fa-angle-right pull-right"></i>
                         </div>
                         <ul class="sublist" id="settings-child">
@@ -85,15 +123,74 @@
                             <button class="close-modal closeModal" data-modal="modal-3" type="button">
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
+                            <h1>
+                                Criando nova pasta
+                            </h1>
+                            <h4>
+                                Adicione um nome à pasta e escolha os ativos de sua preferência
+                            </h4>
+                            <p class="example">
+                                Esta funcionalidade tem como objetio facilitar a organização dos ativos por grupos.
+                            <p class="example">Exemplo: <br>
+                                Sou um investidor que só compra ações com mais de 8% de <i>Dividend yield</i>, posso
+                                criar uma pasta para
+                                organizar esses ativos em um só lugar.
+                            </p>
+
+                            </p>
                         </div>
-                        <div>
-                            <form action="">
-                                <div class="input-group">
-                                    <label for="folder-name">Nome da pasta</label>
-                                    <input type="text" id="folder-name" name="folder-name"
-                                        placeholder="Adicione o nome da pasta" />
+                        <div class="modal-content">
+                            <div class="inside-modal-content-form">
+
+                                <div>
+                                    <label class="custom-field">
+                                        <input type="text" required maxlength="20">
+                                        <span class="placeholder">Nome da pasta</span>
+                                    </label>
                                 </div>
-                            </form>
+                                <div>
+                                    <label class="custom-field">
+                                        <input type="text" id="asset-search" required>
+                                        <span class="placeholder">Pesquise por um ativo</span>
+
+                                        <ul class="options" id="options-list">
+                                            <li>
+                                                <img src="/image/company logos/WEGE3.png" alt="wege3"
+                                                    class="option-logo">
+                                                WEGE3
+                                            </li>
+                                            <li>PETR4</li>
+                                            <li>BBAS3</li>
+                                            <li>ITSA4</li>
+                                            <li>BBSE3</li>
+                                        </ul>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <button class="send-assets">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#FAF9F6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-check-icon lucide-check">
+                                                <path d="M20 6 9 17l-5-5" />
+                                            </svg>
+                                        </button>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="inside-modal-content-selected-assets">
+                                <div class="selected-assets-content">
+                                    <img src="/image/company logos/WEGE3.png" alt="wege3" class="selected-assets-logo">
+                                    <span>WEGE3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="create-folder">
+                                Adicionar pasta
+                            </button>
                         </div>
                     </dialog>
                     <button class="add-favorite"><i class="fa-solid fa-bookmark"></i>Adicioanar favorito</button>
@@ -109,10 +206,11 @@
                                 </button>
                                 <h1 class="folder-name">Dy alto</h1>
                             </div>
-                            <div>
+                            <div class="modal-content">
                                 <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
                                 <span class="text-folder">WEGE3</span>
                             </div>
+                            <div class="modal-footer"></div>
                         </dialog>
                     </div>
                     <div class="favorite">
@@ -125,10 +223,11 @@
                                 </button>
                                 <h1 class="folder-name">Pvp média</h1>
                             </div>
-                            <div>
+                            <div class="modal-content">
                                 <img src="/image/company logos/WEGE3.png" alt="wege3" class="cp-logo">
                                 <span class="text-folder">WEGE3</span>
                             </div>
+                            <div class="modal-footer"></div>
                         </dialog>
                     </div>
                     <div class="favorite">
@@ -235,5 +334,6 @@
 </body>
 <script type="module" src="/js/gp.js"></script>
 <script type="module" src="/js/pages.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
 </html>
