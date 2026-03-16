@@ -140,27 +140,52 @@
                             </p>
                         </div>
                         <div class="modal-content">
-                            <form action="">
-                                <label class="custom-field">
-                                    <input type="text" required maxlength="20">
-                                    <span class="placeholder">Nome da pasta</span>
-                                </label>
-                                <label class="custom-field">
-                                    <input type="text" id="asset-search">
-                                    <span class="placeholder">Pesquise por um ativo</span>
+                            <div class="inside-modal-content-form">
 
-                                    <ul class="options" id="options-list">
-                                        <li>
-                                            <img src="/image/company logos/WEGE3.png" alt="wege3" class="option-logo">
-                                            WEGE3
-                                        </li>
-                                        <li>PETR4</li>
-                                        <li>BBAS3</li>
-                                        <li>ITSA4</li>
-                                        <li>BBSE3</li>
-                                    </ul>
-                                </label>
-                            </form>
+                                <div>
+                                    <label class="custom-field">
+                                        <input type="text" required maxlength="20">
+                                        <span class="placeholder">Nome da pasta</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom-field">
+                                        <input type="text" id="asset-search" required>
+                                        <span class="placeholder">Pesquise por um ativo</span>
+
+                                        <ul class="options" id="options-list">
+                                            <li>
+                                                <img src="/image/company logos/WEGE3.png" alt="wege3"
+                                                    class="option-logo">
+                                                WEGE3
+                                            </li>
+                                            <li>PETR4</li>
+                                            <li>BBAS3</li>
+                                            <li>ITSA4</li>
+                                            <li>BBSE3</li>
+                                        </ul>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <button class="send-assets">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="none" stroke="#FAF9F6" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-check-icon lucide-check">
+                                                <path d="M20 6 9 17l-5-5" />
+                                            </svg>
+                                        </button>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="inside-modal-content-selected-assets">
+                                <div class="selected-assets-content">
+                                    <img src="/image/company logos/WEGE3.png" alt="wege3" class="selected-assets-logo">
+                                    <span>WEGE3</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button class="create-folder">
