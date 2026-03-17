@@ -1,4 +1,4 @@
-import { fncs } from "./function.js";
+import { fncs } from "../public/js/function.js";
 
 const openButton = fncs.$$("#openModal");
 openButton.forEach(e => {
