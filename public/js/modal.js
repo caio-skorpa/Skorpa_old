@@ -1,7 +1,6 @@
 import { fncs } from "./function.js";
-const f = new fncs();
 
-const openButton = f.$$("#openModal");
+const openButton = fncs.$$("#openModal");
 openButton.forEach(e => {
     e.addEventListener("click", () => {
         const modalId = e.getAttribute("data-modal")
@@ -10,7 +9,7 @@ openButton.forEach(e => {
     })
 })
 
-const closeButtons = $$("#closeModal");
+const closeButtons = fncs.$$("#closeModal");
 
 closeButtons.forEach(e => {
     e.addEventListener("click", () => {
