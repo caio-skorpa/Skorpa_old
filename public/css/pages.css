@@ -217,21 +217,25 @@ Precisa do valid pq se n o css volta oa estado inicial apenas usando o focus, é
 }
 
 #asset-search:valid {
-    border-color: green
+    border-color: green;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .options {
     position: absolute;
-    width: 300px;
+    width: 324px;
     background: var(--whiteColor);
     border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     border: 2px solid var(--blackColor);
-    margin-top: 5px;
     list-style: none;
     padding: 0;
     max-height: 150px;
     overflow-y: auto;
     display: none;
+    margin: 0px;
 }
 
 .options li {
@@ -239,14 +243,22 @@ Precisa do valid pq se n o css volta oa estado inicial apenas usando o focus, é
     cursor: pointer;
 }
 
+.assets-option{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
 .options li:hover {
-    background: #eee;
+    background: #d3d3d3;
 }
 
 .option-logo {
     width: 20px;
     height: 20px;
     border-radius: 15px;
+    border: 1px solid var(--blackColor);
 }
 
 .custom-field {
