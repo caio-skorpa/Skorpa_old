@@ -1,3 +1,5 @@
+
+
 const ativo = "WEGE3";
 const lancamento = [
   { valor: 15.1, quantidade: 5 },
@@ -21,3 +23,4 @@ const medio = (dividendo, divisor) => {
   return dividendo / divisor;
 };
 console.log(medio(somaValorAporte, quantidadeTotal).toFixed(2));
+console.log(process.env.BRAPI_API_KEY);
