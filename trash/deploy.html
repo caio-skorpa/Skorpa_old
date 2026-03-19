@@ -7,17 +7,70 @@
     <title>Skorpa</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-        .name {
+        html {
+            margin: 0px;
+            overflow: 0px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
             font-family: "Mea Culpa", cursive;
+            font-size: 200px;
+            color: #1d1d1d;
+        }
+
+        h2 {
+            color: #1d1d1d;
+            font-family: "Inter", sans-serif;
+        }
+
+        .main-div {
+            grid-area: main-div;
+        }
+
+        footer>div {
+            grid-area: footer;
+            font-family: "Inter", sans-serif;
+            color: #1d1d1d;
+            font-size: 30px;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: 1fr 100px;
+            grid-template-columns: 1fr;
+            height: 100%;
+            grid-template-areas:
+                "main-div"
+                "footer";
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #1d1d1d;
+        }
+
+        a:hover {
+            color: rgb(0, 102, 204);
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <span class="name">Skorpa</span>
+    <div class="main-div">
+        <h1>Skorpa</h1>
+        <h2>Em breve....</h2>
     </div>
+    <footer>
+        <div>
+            <a href="mailto:caio@skorpa.com.br">caio@skorpa.com.br</a>
+        </div>
+    </footer>
 </body>
 
 </html>
