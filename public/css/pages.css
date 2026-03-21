@@ -243,7 +243,7 @@ Precisa do valid pq se n o css volta oa estado inicial apenas usando o focus, é
     cursor: pointer;
 }
 
-.assets-option{
+.assets-option {
     display: flex;
     justify-content: flex-start;
     align-items: center;

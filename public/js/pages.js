@@ -20,9 +20,6 @@ closeButtons.forEach(e => {
     });
 });
 
-
-
-
 const input = fncs.$("#asset-search");
 const list = fncs.$("#options-list");
 const options = list.querySelectorAll("li");
