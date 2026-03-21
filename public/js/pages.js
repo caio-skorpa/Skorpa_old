@@ -23,8 +23,8 @@ closeButtons.forEach(e => {
 
 
 
-const input = document.querySelector("#asset-search");
-const list = document.querySelector("#options-list");
+const input = fncs.$("#asset-search");
+const list = fncs.$("#options-list");
 const options = list.querySelectorAll("li");
 
 input.addEventListener("input", () => {
