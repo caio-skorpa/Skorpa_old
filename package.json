@@ -21,6 +21,7 @@
   "homepage": "https://github.com/caiogomesfontoura/The-Skorpa#readme",
   "dependencies": {
     "body-parser": "^2.2.2",
+    "brapi": "^1.0.1",
     "express": "^5.2.1"
   },
   "devDependencies": {
