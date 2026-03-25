@@ -45,6 +45,7 @@ async function getValueAssets2(sliderAssets) {
     const promises = sliderAssets.map(ticker =>
         client.quote.retrieve(ticker)
     );
+    /*
     const results = await Promise.all(promises);
     const assets = results.map(quote => ({
         symbol: quote.results[0].symbol,
@@ -53,6 +54,8 @@ async function getValueAssets2(sliderAssets) {
     );
 
     console.log(assets);
+    */
+    await Promise.all(promises).then().catch(err => console.log(err))
 }
 
 getValueAssets(sliderAssets);
