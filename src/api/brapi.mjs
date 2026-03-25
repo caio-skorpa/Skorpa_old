@@ -55,7 +55,7 @@ async function getValueAssets2(sliderAssets) {
 
     console.log(assets);
     */
-    await Promise.all(promises).then().catch(err => console.log(err))
+    await Promise.all(promises).then(a).catch(err => console.log(err))
 }
 
 getValueAssets(sliderAssets);
