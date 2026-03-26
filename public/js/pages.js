@@ -1,9 +1,8 @@
 //participa de gp.js / index.html
 import { fncs } from "./function.js";
-const f = new fncs();
 
-const openButton = f.$$(".openModal");
-const closeButtons = f.$$(".closeModal");
+const openButton = fncs.$$(".openModal");
+const closeButtons = fncs.$$(".closeModal");
 
 openButton.forEach(e => {
     e.addEventListener("click", () => {
@@ -21,11 +20,8 @@ closeButtons.forEach(e => {
     });
 });
 
-
-
-
-const input = document.querySelector("#asset-search");
-const list = document.querySelector("#options-list");
+const input = fncs.$("#asset-search");
+const list = fncs.$("#options-list");
 const options = list.querySelectorAll("li");
 
 input.addEventListener("input", () => {
@@ -63,4 +59,31 @@ options.forEach(option => {
         list.style.display = "none"; // fecha a lista
 
     });
+});
+
+
+const botao = fncs.$(".send-assets");
+const divContentSelected = fncs.$(".inside-modal-content-selected-assets");
+
+function addSelectedAssets() {
+    const div = document.createElement("div");
+    div.className = "selected-assets-content";
+    const img = document.createElement("img");
+    img.src = "/image/company logos/WEGE3.png";
+    img.alt = "wege3";
+    img.className = "selected-assets-logo";
+    const span = document.createElement("span");
+    span.className = "selected-assets-span";
+    span.textContent = "WEGE3";
+    div.appendChild(img);
+    div.appendChild(span);
+    return div;
+}
+
+fncs.click(botao, () => {
+    botao.classList.add("active-green");
+    divContentSelected.appendChild(addSelectedAssets());
+    setTimeout(() => {
+        botao.classList.remove("active-green");
+    }, 500);
 });

@@ -1,9 +1,15 @@
 import { fncs } from "./function.js";
-const f = new fncs();
 
-const nav = f.$(".nav");
-const hideSideBar = f.$$(".fa-bars");
-const main = f.$("main");
+const nav = fncs.$(".nav");
+const hideSideBar = fncs.$$(".fa-bars");
+const main = fncs.$("main");
+
+const elements = {
+    nav: fncs.$(".nav"),
+    hideSideBar: fncs.$$(".fa-bars"),
+    main: fncs.$("main"),
+
+}
 
 function showHide() {
     nav.classList.toggle("hidden");
@@ -40,8 +46,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 
-const collet = f.$(".collect");
-const sublistAll = f.$$(".sublist");
+const collet = fncs.$(".collect");
+const sublistAll = fncs.$$(".sublist");
 
 collet.addEventListener("click", () => {
     sublistAll.forEach(e => {
@@ -55,15 +61,15 @@ collet.addEventListener("click", () => {
 
 
 
-const wallet = f.$("#wallet");
-const sublistWall = f.$("#wallet-child");
-const reports = f.$("#reports");
-const sublistRep = f.$("#reports-child");
-const settings = f.$("#settings");
-const sublistSet = f.$("#settings-child");
-const assets = f.$("#assets");
-const subListAssets = f.$("#assets-child");
-const arrow = f.$$(".fa-angle-right");
+const wallet = fncs.$("#wallet");
+const sublistWall = fncs.$("#wallet-child");
+const reports = fncs.$("#reports");
+const sublistRep = fncs.$("#reports-child");
+const settings = fncs.$("#settings");
+const sublistSet = fncs.$("#settings-child");
+const assets = fncs.$("#assets");
+const subListAssets = fncs.$("#assets-child");
+const arrow = fncs.$$(".fa-angle-right");
 
 wallet.addEventListener("click", () => {
     sublistWall.classList.toggle("isBlock");
@@ -84,8 +90,8 @@ settings.addEventListener("click", () => {
     arrow[3].classList.toggle("rotate");
 });
 
-const range = f.$$(".variacaoItem")
-const icon = f.$$(".variacaoItemIcon")
+const range = fncs.$$(".variacaoItem")
+const icon = fncs.$$(".variacaoItemIcon")
 
 range.forEach(el => {
     const value = parseFloat(el.innerText.replace(',', '.'));
@@ -125,7 +131,7 @@ async function router() {
 
     routes.forEach(e => {// criando a chave que pega o elemento pelo href
         if (!e.element) {
-            e.element = f.$(`a[href = "${e.path}"]`);
+            e.element = fncs.$(`a[href = "${e.path}"]`);
         }
     });
 
@@ -138,7 +144,7 @@ async function router() {
 
     let match = potentialMatches.find(pontentialMatch => pontentialMatch.isMatch);//match é true no primeiro elemento que isMath é true. Ele percorre todo o array.
 
-    const urls = f.$$(".point");
+    const urls = fncs.$$(".point");
     urls.forEach(e => {
         const href = e.getAttribute("href");
         if (location.pathname === "/") {
