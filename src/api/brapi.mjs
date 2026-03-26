@@ -39,7 +39,7 @@ async function getValueAssets(sliderAssets) {
     })
     );
 
-    return assets
+    console.log(assets); 
 }
 
 getValueAssets(sliderAssets);
