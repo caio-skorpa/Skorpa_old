@@ -28,24 +28,10 @@ const sliderAssets = [
     "ELET3"
 ];//ideal seria ver as negociações do dia na bolsa e fazer esse array com as 15 ações mais negociadas
 
-//minha implementação
 async function getValueAssets(sliderAssets) {
-    for (let i = 0; i < sliderAssets.length; i++) {
-        const quote = await client.quote.retrieve(sliderAssets[i]);
-        let assets = {
-            symbol: quote.results[0].symbol,
-            regularMarketPrice: quote.results[0].regularMarketPrice
-        }
-        console.log(assets);
-        //console.log(quote);
-    }
-}
-//implementação IA ABSURDAMENTE MELHOR E MAIS RÁPIDA USA PROMISSE ALL
-async function getValueAssets2(sliderAssets) {
     const promises = sliderAssets.map(ticker =>
         client.quote.retrieve(ticker)
     );
-    /*
     const results = await Promise.all(promises);
     const assets = results.map(quote => ({
         symbol: quote.results[0].symbol,
@@ -53,18 +39,10 @@ async function getValueAssets2(sliderAssets) {
     })
     );
 
-    console.log(assets);
-    */
-    await Promise.all(promises)
-        .then(assets => {
-            assets.map(quote => {
-
-            });
-        }).catch(err => console.log(err))
+    return assets
 }
 
 getValueAssets(sliderAssets);
-getValueAssets2(sliderAssets);
 
 /*
 try {
