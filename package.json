@@ -1,31 +1,50 @@
 {
   "name": "the-skorpa",
-  "version": "1.0.0",
-  "description": "My dream",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Investment portfolio management platform",
   "scripts": {
-    "start": "node ./src/app.js",
-    "dev": "npx nodemon ./src/app.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/caiogomesfontoura/The-Skorpa.git"
   },
-  "keywords": [],
+  "keywords": ["investment", "portfolio", "stocks", "b3"],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/caiogomesfontoura/The-Skorpa/issues"
   },
   "homepage": "https://github.com/caiogomesfontoura/The-Skorpa#readme",
   "dependencies": {
-    "body-parser": "^2.2.2",
     "brapi": "^1.0.1",
-    "express": "^5.2.1"
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "lucide-react": "^0.462.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5",
+    "zustand": "^5.0.2"
   },
   "devDependencies": {
-    "dotenv": "^17.3.1",
-    "nodemon": "^3.1.11"
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.7.2",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.1.0"
   }
 }
